@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
+
 # Returns a new list with each of the numbers in the input squared
 # Does not modify the input list
 def square_list(input):
-    output = input
+    output = []
 
-    for i, v in enumerate(input):
-        output[i] = v * v
+    for v in input:
+        output.append(v * v)
 
     return output
 
@@ -19,9 +20,9 @@ def main():
     a = [1, 2, 3, 4]
     b = square_list(a)
 
-    print('a:', a)
-    print('b:', b)
+    print("a:", a)
+    print("b:", b)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
